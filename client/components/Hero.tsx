@@ -49,10 +49,9 @@ export default function Hero() {
               </h1>
               <div className="h-12 flex items-center">
                 <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-                  I'm a{" "}
-                  <span className="inline-block min-w-[200px]">
+                  <span className="inline-block">
                     <span className="gradient-text font-bold">
-                      Full Stack Developer
+                      Computer Science Student
                     </span>
                   </span>
                 </p>
@@ -61,9 +60,9 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
-              I build responsive web applications using modern technologies. I
-              enjoy solving complex problems and creating intuitive user
-              experiences with clean code and creative solutions.
+              Passionate about web development and creating beautiful, responsive applications.
+              I love learning new technologies and building projects that solve real problems with clean,
+              efficient code.
             </p>
 
             {/* Stats */}
@@ -73,8 +72,8 @@ export default function Hero() {
                 <div className="text-sm text-muted-foreground">Projects</div>
               </div>
               <div className="glass rounded-xl p-4">
-                <div className="text-2xl font-bold gradient-text">1+</div>
-                <div className="text-sm text-muted-foreground">Years</div>
+                <div className="text-2xl font-bold gradient-text">Fresher</div>
+                <div className="text-sm text-muted-foreground">Experience</div>
               </div>
             </div>
 
