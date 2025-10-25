@@ -35,7 +35,8 @@ export default function Footer() {
               <span className="gradient-text">Navya</span>
             </h3>
             <p className="text-muted-foreground text-sm">
-              Full stack developer passionate about building beautiful and functional web applications.
+              Full stack developer passionate about building beautiful and
+              functional web applications.
             </p>
           </div>
 
@@ -115,7 +116,8 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm text-center md:text-left">
-            © {currentYear} Navya N. All rights reserved. Made with ❤️ using React & Tailwind CSS.
+            © {currentYear} Navya N. All rights reserved. Made with ❤️ using
+            React & Tailwind CSS.
           </p>
 
           {/* Back to Top */}

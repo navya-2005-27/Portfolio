@@ -39,7 +39,9 @@ export default function Hero() {
             {/* Greeting */}
             <div className="flex items-center gap-2">
               <span className="text-3xl">👋</span>
-              <p className="text-primary font-semibold">Hey there! Welcome to my portfolio</p>
+              <p className="text-primary font-semibold">
+                Hey there! Welcome to my portfolio
+              </p>
             </div>
 
             {/* Main Heading */}
@@ -60,9 +62,10 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
-              Passionate about web development and creating beautiful, responsive applications.
-              I love learning new technologies and building projects that solve real problems with clean,
-              efficient code.
+              Passionate about web development and creating beautiful,
+              responsive applications. I love learning new technologies and
+              building projects that solve real problems with clean, efficient
+              code.
             </p>
 
             {/* Stats */}
@@ -134,26 +137,34 @@ export default function Hero() {
               </div>
 
               {/* Floating Tag 1 - Python */}
-              <div className="absolute top-0 right-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
-                style={{ animationDelay: "0.2s" }}>
+              <div
+                className="absolute top-0 right-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
+                style={{ animationDelay: "0.2s" }}
+              >
                 <span className="gradient-text font-semibold">Python</span>
               </div>
 
               {/* Floating Tag 2 - Java */}
-              <div className="absolute bottom-0 left-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
-                style={{ animationDelay: "0.4s" }}>
+              <div
+                className="absolute bottom-0 left-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
+                style={{ animationDelay: "0.4s" }}
+              >
                 <span className="gradient-text font-semibold">Java</span>
               </div>
 
               {/* Floating Tag 3 - HTML */}
-              <div className="absolute top-16 left-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
-                style={{ animationDelay: "0.6s" }}>
+              <div
+                className="absolute top-16 left-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
+                style={{ animationDelay: "0.6s" }}
+              >
                 <span className="gradient-text font-semibold">HTML</span>
               </div>
 
               {/* Floating Tag 4 - CSS */}
-              <div className="absolute bottom-12 right-10 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
-                style={{ animationDelay: "0.8s" }}>
+              <div
+                className="absolute bottom-12 right-10 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
+                style={{ animationDelay: "0.8s" }}
+              >
                 <span className="gradient-text font-semibold">CSS</span>
               </div>
             </div>

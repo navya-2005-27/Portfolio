@@ -6,7 +6,8 @@ export default function Resume() {
       degree: "Bachelor of Science in Computer Science",
       institution: "Your University",
       period: "2022 - Present",
-      details: "Pursuing a degree with focus on full-stack development and web technologies.",
+      details:
+        "Pursuing a degree with focus on full-stack development and web technologies.",
     },
   ];
 
@@ -91,7 +92,7 @@ English (Fluent), Hindi (Native)
     const element = document.createElement("a");
     element.setAttribute(
       "href",
-      "data:text/plain;charset=utf-8," + encodeURIComponent(resumeContent)
+      "data:text/plain;charset=utf-8," + encodeURIComponent(resumeContent),
     );
     element.setAttribute("download", "Navya_N_Resume.txt");
     element.style.display = "none";
@@ -117,7 +118,8 @@ English (Fluent), Hindi (Native)
             My <span className="gradient-text">Resume</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Download my resume to learn more about my education, skills, and projects.
+            Download my resume to learn more about my education, skills, and
+            projects.
           </p>
         </div>
 
@@ -150,7 +152,10 @@ English (Fluent), Hindi (Native)
           </div>
 
           {/* Education */}
-          <div className="space-y-4 animate-slide-in" style={{ animationDelay: "0.1s" }}>
+          <div
+            className="space-y-4 animate-slide-in"
+            style={{ animationDelay: "0.1s" }}
+          >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 rounded-lg bg-primary/20 text-primary">
                 <Award className="w-6 h-6" />
@@ -187,7 +192,10 @@ English (Fluent), Hindi (Native)
           </div>
 
           {/* Certifications */}
-          <div className="space-y-4 animate-slide-in" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="space-y-4 animate-slide-in"
+            style={{ animationDelay: "0.2s" }}
+          >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 rounded-lg bg-primary/20 text-primary">
                 <Code2 className="w-6 h-6" />
@@ -211,7 +219,9 @@ English (Fluent), Hindi (Native)
                     <p className="text-muted-foreground text-sm mb-1">
                       {cert.issuer}
                     </p>
-                    <p className="text-primary text-xs font-medium">{cert.date}</p>
+                    <p className="text-primary text-xs font-medium">
+                      {cert.date}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -220,7 +230,10 @@ English (Fluent), Hindi (Native)
         </div>
 
         {/* Skills Summary */}
-        <div className="mt-16 glass rounded-2xl p-8 animate-slide-in" style={{ animationDelay: "0.3s" }}>
+        <div
+          className="mt-16 glass rounded-2xl p-8 animate-slide-in"
+          style={{ animationDelay: "0.3s" }}
+        >
           <h3 className="text-2xl font-bold mb-6">
             Skills & <span className="gradient-text">Expertise</span>
           </h3>

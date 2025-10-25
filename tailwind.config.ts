@@ -80,7 +80,7 @@ export default {
             height: "0",
           },
         },
-        "float": {
+        float: {
           "0%, 100%": {
             transform: "translateY(0px)",
           },
@@ -88,7 +88,7 @@ export default {
             transform: "translateY(-10px)",
           },
         },
-        "glow": {
+        glow: {
           "0%, 100%": {
             opacity: "0.3",
           },
@@ -110,12 +110,12 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "float": "float 3s ease-in-out infinite",
-        "glow": "glow 2s ease-in-out infinite",
+        float: "float 3s ease-in-out infinite",
+        glow: "glow 2s ease-in-out infinite",
         "slide-in": "slide-in 0.5s ease-out",
         "pulse-glow": "pulse-glow 2s infinite",
         "bounce-soft": "bounce-soft 2s ease-in-out infinite",
-        "shimmer": "shimmer 2s infinite",
+        shimmer: "shimmer 2s infinite",
         "rotate-slow": "rotate-slow 20s linear infinite",
       },
       backgroundImage: {

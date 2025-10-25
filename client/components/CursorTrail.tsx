@@ -107,16 +107,10 @@ export default function CursorTrail() {
           0,
           p.x,
           p.y,
-          p.size * 2
+          p.size * 2,
         );
-        gradient.addColorStop(
-          0,
-          `hsla(186, 100%, 50%, ${opacity * 0.8})`
-        );
-        gradient.addColorStop(
-          1,
-          `hsla(200, 60%, 45%, ${opacity * 0.1})`
-        );
+        gradient.addColorStop(0, `hsla(186, 100%, 50%, ${opacity * 0.8})`);
+        gradient.addColorStop(1, `hsla(200, 60%, 45%, ${opacity * 0.1})`);
 
         ctx.fillStyle = gradient;
         ctx.beginPath();
@@ -148,7 +142,13 @@ export default function CursorTrail() {
       ctx.strokeStyle = `rgba(0, 212, 255, ${opacity})`;
       ctx.lineWidth = 2.5;
       ctx.beginPath();
-      ctx.arc(cursorRef.current.x, cursorRef.current.y, finalSize, 0, Math.PI * 2);
+      ctx.arc(
+        cursorRef.current.x,
+        cursorRef.current.y,
+        finalSize,
+        0,
+        Math.PI * 2,
+      );
       ctx.stroke();
 
       // Inner glowing circle
@@ -158,7 +158,7 @@ export default function CursorTrail() {
         0,
         cursorRef.current.x,
         cursorRef.current.y,
-        finalSize
+        finalSize,
       );
       innerGradient.addColorStop(0, `rgba(0, 212, 255, ${opacity * 0.5})`);
       innerGradient.addColorStop(1, `rgba(0, 153, 204, ${opacity * 0.1})`);
@@ -170,7 +170,7 @@ export default function CursorTrail() {
         cursorRef.current.y,
         finalSize * 0.35,
         0,
-        Math.PI * 2
+        Math.PI * 2,
       );
       ctx.fill();
 
@@ -182,14 +182,15 @@ export default function CursorTrail() {
         cursorRef.current.y,
         finalSize * 0.12,
         0,
-        Math.PI * 2
+        Math.PI * 2,
       );
       ctx.fill();
 
       // Enhanced cross indicator - animated
       ctx.strokeStyle = `rgba(0, 212, 255, ${opacity * (0.5 + 0.3 * Math.sin(timeRef.current * 0.05))})`;
       ctx.lineWidth = 1.8;
-      const crossSize = finalSize * (0.65 + 0.1 * Math.sin(timeRef.current * 0.03));
+      const crossSize =
+        finalSize * (0.65 + 0.1 * Math.sin(timeRef.current * 0.03));
 
       // Horizontal line
       ctx.beginPath();
@@ -212,22 +213,22 @@ export default function CursorTrail() {
         ctx.beginPath();
         ctx.moveTo(
           cursorRef.current.x - diagSize * 0.7,
-          cursorRef.current.y - diagSize * 0.7
+          cursorRef.current.y - diagSize * 0.7,
         );
         ctx.lineTo(
           cursorRef.current.x + diagSize * 0.7,
-          cursorRef.current.y + diagSize * 0.7
+          cursorRef.current.y + diagSize * 0.7,
         );
         ctx.stroke();
 
         ctx.beginPath();
         ctx.moveTo(
           cursorRef.current.x + diagSize * 0.7,
-          cursorRef.current.y - diagSize * 0.7
+          cursorRef.current.y - diagSize * 0.7,
         );
         ctx.lineTo(
           cursorRef.current.x - diagSize * 0.7,
-          cursorRef.current.y + diagSize * 0.7
+          cursorRef.current.y + diagSize * 0.7,
         );
         ctx.stroke();
       }

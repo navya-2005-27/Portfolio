@@ -1,11 +1,4 @@
-import {
-  Code2,
-  Database,
-  Palette,
-  Zap,
-  Layout,
-  Server,
-} from "lucide-react";
+import { Code2, Database, Palette, Zap, Layout, Server } from "lucide-react";
 
 interface SkillCategory {
   name: string;
@@ -18,17 +11,38 @@ export default function Skills() {
     {
       name: "Frontend",
       icon: <Layout className="w-6 h-6" />,
-      skills: ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "JavaScript"],
+      skills: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+      ],
     },
     {
       name: "Backend",
       icon: <Server className="w-6 h-6" />,
-      skills: ["Node.js", "Express", "Python", "REST APIs", "Authentication", "Server Architecture"],
+      skills: [
+        "Node.js",
+        "Express",
+        "Python",
+        "REST APIs",
+        "Authentication",
+        "Server Architecture",
+      ],
     },
     {
       name: "Databases",
       icon: <Database className="w-6 h-6" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Data Design", "Query Optimization"],
+      skills: [
+        "MongoDB",
+        "PostgreSQL",
+        "MySQL",
+        "Firebase",
+        "Data Design",
+        "Query Optimization",
+      ],
     },
     {
       name: "Tools & DevOps",
@@ -38,7 +52,14 @@ export default function Skills() {
     {
       name: "Design",
       icon: <Palette className="w-6 h-6" />,
-      skills: ["Figma", "UI Design", "UX Principles", "Responsive Design", "Accessibility", "Prototyping"],
+      skills: [
+        "Figma",
+        "UI Design",
+        "UX Principles",
+        "Responsive Design",
+        "Accessibility",
+        "Prototyping",
+      ],
     },
     {
       name: "Languages",

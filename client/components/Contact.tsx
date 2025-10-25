@@ -35,7 +35,7 @@ export default function Contact() {
   ];
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -132,10 +132,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form
-              onSubmit={handleSubmit}
-              className="space-y-4"
-            >
+            <form onSubmit={handleSubmit} className="space-y-4">
               {/* Name Field */}
               <div className="group">
                 <label className="block text-sm font-medium mb-2">Name</label>
@@ -203,7 +200,8 @@ export default function Contact() {
               )}
               {submitStatus === "error" && (
                 <div className="p-4 rounded-lg bg-red-500/20 border border-red-500/50 text-red-200">
-                  ✗ Failed to send message. Please try again or email me directly.
+                  ✗ Failed to send message. Please try again or email me
+                  directly.
                 </div>
               )}
 
@@ -219,7 +217,8 @@ export default function Contact() {
 
               {/* Note */}
               <p className="text-xs text-muted-foreground text-center">
-                Messages are submitted to the server and will be stored in Supabase database once connected.
+                Messages are submitted to the server and will be stored in
+                Supabase database once connected.
               </p>
             </form>
           </div>
