@@ -113,6 +113,10 @@ export default {
         "float": "float 3s ease-in-out infinite",
         "glow": "glow 2s ease-in-out infinite",
         "slide-in": "slide-in 0.5s ease-out",
+        "pulse-glow": "pulse-glow 2s infinite",
+        "bounce-soft": "bounce-soft 2s ease-in-out infinite",
+        "shimmer": "shimmer 2s infinite",
+        "rotate-slow": "rotate-slow 20s linear infinite",
       },
       backgroundImage: {
         "gradient-cyan": "linear-gradient(135deg, #00d4ff 0%, #0099cc 100%)",
