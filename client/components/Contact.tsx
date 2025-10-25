@@ -219,7 +219,7 @@ export default function Contact() {
 
               {/* Note */}
               <p className="text-xs text-muted-foreground text-center">
-                This form is connected to a database for storing submissions.
+                Messages are submitted to the server and will be stored in Supabase database once connected.
               </p>
             </form>
           </div>
