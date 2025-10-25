@@ -47,17 +47,25 @@ export default function Contact() {
     setSubmitStatus("idle");
 
     try {
-      // TODO: Submit to database (Supabase) once connected
-      // For now, just simulate submission
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // Validate form
+      // Validate form on client side
       if (!formData.name || !formData.email || !formData.message) {
-        throw new Error("Please fill in all fields");
+        throw new Error("Please fill in all required fields");
       }
 
-      // Log form data (remove in production)
-      console.log("Form submitted:", formData);
+      // Submit to backend API
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "Failed to send message");
+      }
 
       setSubmitStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
