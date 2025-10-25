@@ -221,7 +221,9 @@ English (Fluent), Hindi (Native)
 
         {/* Skills Summary */}
         <div className="mt-16 glass rounded-2xl p-8 animate-slide-in" style={{ animationDelay: "0.3s" }}>
-          <h3 className="text-2xl font-bold mb-6">Key Skills</h3>
+          <h3 className="text-2xl font-bold mb-6">
+            Skills & <span className="gradient-text">Expertise</span>
+          </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               "Python",
