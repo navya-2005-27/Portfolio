@@ -81,16 +81,18 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 pt-4">
               <a
                 href="#projects"
-                className="px-8 py-3.5 rounded-full bg-gradient-cyan text-background font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex items-center gap-2 group"
+                className="px-8 py-3.5 rounded-full bg-gradient-cyan text-background font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex items-center gap-2 group button-hover relative"
               >
-                View My Work
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <span className="relative z-10 flex items-center gap-2">
+                  View My Work
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </span>
               </a>
               <a
                 href="#contact"
-                className="px-8 py-3.5 rounded-full glass glass-hover font-semibold flex items-center gap-2"
+                className="px-8 py-3.5 rounded-full glass glass-hover font-semibold flex items-center gap-2 button-hover relative"
               >
-                Get In Touch
+                <span className="relative z-10">Get In Touch</span>
               </a>
             </div>
 
