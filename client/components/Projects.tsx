@@ -16,7 +16,7 @@ export default function Projects() {
       description:
         "A comprehensive hostel management system for student accommodation, featuring room allocation, complaint tracking, and admin dashboard.",
       github: "https://github.com/navya-2005-27/Bgsit-Hostel-Management",
-      live: "https://bgsit-hostel-management.vercel.app",
+      live: "https://genuine-moonbeam-4ea567.netlify.app/",
       tags: ["TypeScript", "React", "Tailwind", "Management System"],
       image: "🏢",
     },
