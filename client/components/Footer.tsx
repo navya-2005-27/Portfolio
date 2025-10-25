@@ -69,6 +69,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="#resume"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a
                   href="#contact"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
