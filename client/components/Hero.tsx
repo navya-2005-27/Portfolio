@@ -11,7 +11,7 @@ export default function Hero() {
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/navya-n-43242529b",
       label: "LinkedIn",
     },
     {
