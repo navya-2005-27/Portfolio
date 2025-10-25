@@ -124,29 +124,35 @@ export default function Hero() {
               {/* Main Profile Card */}
               <div className="glass rounded-2xl p-8 w-64 h-80 flex flex-col items-center justify-center relative z-10 animate-float">
                 <div className="w-32 h-32 rounded-full bg-gradient-cyan/20 flex items-center justify-center text-5xl mb-4">
-                  💻
+                  👩‍💻
                 </div>
                 <h3 className="text-center font-bold text-lg">
-                  Full Stack <br /> Developer
+                  CS Student <br /> Developer
                 </h3>
               </div>
 
-              {/* Floating Tag 1 */}
+              {/* Floating Tag 1 - Python */}
               <div className="absolute top-0 right-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
                 style={{ animationDelay: "0.2s" }}>
-                <span className="gradient-text font-semibold">React</span>
+                <span className="gradient-text font-semibold">Python</span>
               </div>
 
-              {/* Floating Tag 2 */}
+              {/* Floating Tag 2 - Java */}
               <div className="absolute bottom-0 left-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
                 style={{ animationDelay: "0.4s" }}>
-                <span className="gradient-text font-semibold">TypeScript</span>
+                <span className="gradient-text font-semibold">Java</span>
               </div>
 
-              {/* Floating Tag 3 */}
+              {/* Floating Tag 3 - HTML */}
               <div className="absolute top-16 left-0 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
                 style={{ animationDelay: "0.6s" }}>
-                <span className="gradient-text font-semibold">Responsive</span>
+                <span className="gradient-text font-semibold">HTML</span>
+              </div>
+
+              {/* Floating Tag 4 - CSS */}
+              <div className="absolute bottom-12 right-10 glass rounded-xl px-4 py-2 text-sm whitespace-nowrap animate-float"
+                style={{ animationDelay: "0.8s" }}>
+                <span className="gradient-text font-semibold">CSS</span>
               </div>
             </div>
           </div>
